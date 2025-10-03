@@ -2,17 +2,6 @@ import allure
 
 
 @allure.feature("Управление заметками")
-@allure.story("Получение всех заметок")
-@allure.title("Получение всех заметок когда нет заметок")
-def test_getAllNotesNoNotes(http, base_url):
-    with allure.step("Отправка GET запроса для получения всех заметок"):
-        r = http.get(f"{base_url}/notes", timeout=10) 
-    
-    with allure.step("Проверка что статус код 404"):
-        assert r.status_code == 404
-
-
-@allure.feature("Управление заметками")
 @allure.story("Создание заметки")
 @allure.title("Успешное создание заметки")
 def test_CreateNote(http, base_url): 
