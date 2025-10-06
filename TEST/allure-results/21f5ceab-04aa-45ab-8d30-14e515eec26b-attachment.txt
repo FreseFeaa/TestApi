@@ -1,0 +1,2 @@
+GET http://localhost:3000/note/invalid_string
+{"message":"Note not found"}

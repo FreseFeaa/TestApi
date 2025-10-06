@@ -1,0 +1,2 @@
+GET http://localhost:3000/note/24
+{"message":"Note not found"}

@@ -1,0 +1,2 @@
+POST http://localhost:3000/note
+{"message":"Title and content are required"}
